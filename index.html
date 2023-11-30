@@ -1,55 +1,95 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Matjary Support Information</title>
-  </head>
+<head>
+  <title>Matjary Support Information</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
 
-  <body>
-    <h1>Contact Us</h1>
-    <p>- Phone: +971 50 40 2025 / +971 4 2424 893</p>
-    <p>- Email: info@uctme.com</p>
-    <p>- Address: Office 1603, Al Ameri Tower, Tecmo (Barsha Heights), Dubai</p>
-    <p>
-      - Working Hours: Our support team is available from 8 AM to 6 PM, Dubai
-      time.
-    </p>
-    <p>
-      Frequently Asked Questions (FAQs) 
-      <br />
-      1. How much is the delivery fee?
-      Delivery is free for all orders.
-      <br />
-      2. How much time does it take to deliver the items? Delivery typically
-      takes between 1 and 2 business days.
-      <br />
-      3. Can I return or exchange an item? 
-      Yes, we have a flexible return and exchange policy. Please refer to our Return Policy for more details.
-      <br />
-      4. What payment methods do you accept? 
-      We accept a variety of payment methods including credit/debit cards and cash on delivery. 
-      User Guides and Tutorials Our platform is designed to be simple and user-friendly.
-      <br />
-      Here are the basic steps to use our service: 
-      <br />
-      1. Search for a product: Use the
-      search function to find the product you're looking for. 
-      <br />
-      2. Buy a product:
-      Once you've found a product, you can add it to your cart and proceed to
-      checkout. 
-      <br />
-      3. Place an order: Follow the prompts to place your order.
-      You'll receive a confirmation once your order is placed. 
-      <br />
-      4. Delivery: Your
-      order will be delivered to you within 1 to 2 business days. Feedback and
-      Suggestions We value your feedback and suggestions as they help us improve
-      our services. If you have any ideas, recommendations, or general feedback,
-      please don't hesitate to share them with us. We appreciate your trust in
-      Matjary and are committed to providing excellent support. Our team is
-      always here to assist you and ensure that your shopping experience with us
-      is nothing short of exceptional.
-      <br />
-    </p>
-    <p></p>
-  </body>
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    .faq-list {
+      list-style-type: decimal;
+      padding-left: 20px;
+    }
+
+    .faq-list li {
+      margin-bottom: 10px;
+    }
+
+    .faq-question {
+      font-weight: bold;
+    }
+
+    .faq-answer {
+      margin-top: 5px;
+      margin-left: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Contact Us</h1>
+  <p>- Phone: +971 50 40 2025 / +971 4 2424 893</p>
+  <p>- Email: info@uctme.com</p>
+  <p>- Address: Office 1603, Al Ameri Tower, Tecmo (Barsha Heights), Dubai</p>
+  <p>- Working Hours: Our support team is available from 8 AM to 6 PM, Dubai time.</p>
+
+  <h2>Frequently Asked Questions (FAQs)</h2>
+  <ol class="faq-list">
+    <li>
+      <span class="faq-question">How much is the delivery fee?</span>
+      <p class="faq-answer">Delivery is free for all orders.</p>
+    </li>
+    <li>
+      <span class="faq-question">How much time does it take to deliver the items?</span>
+      <p class="faq-answer">Delivery typically takes between 1 and 2 business days.</p>
+    </li>
+    <li>
+      <span class="faq-question">Can I return or exchange an item?</span>
+      <p class="faq-answer">Yes, we have a flexible return and exchange policy. Please refer to our Return Policy for more details.</p>
+    </li>
+    <li>
+      <span class="faq-question">What payment methods do you accept?</span>
+      <p class="faq-answer">We accept a variety of payment methods including credit/debit cards and cash on delivery.</p>
+    </li>
+  </ol>
+
+  <h2>User Guides and Tutorials</h2>
+  <p>
+    Our platform is designed to be simple and user-friendly. Here are the basic steps to use our service:
+  </p>
+  <ol>
+    <li>Search for a product: Use the search function to find the product you're looking for.</li>
+    <li>Buy a product: Once you've found a product, you can add it to your cart and proceed to checkout.</li>
+    <li>Place an order: Follow the prompts to place your order. You'll receive a confirmation once your order is placed.</li>
+    <li>Delivery: Your order will be delivered to you within 1 to 2 business days.</li>
+  </ol>
+
+  <p>
+    Feedback and Suggestions: We value your feedback and suggestions as they help us improve our services. If you have any ideas, recommendations, or general feedback, please don't hesitate to share them with us. We appreciate your trust in Matjary and are committed to providing excellent support. Our team is always here to assist you and ensure that your shopping experience with us is nothing short of exceptional.
+  </p>
+
+  <script>
+    // Example JavaScript code (you can write your own logic here)
+    const faqItems = document.querySelectorAll('.faq-question');
+
+    // Add event listener to each FAQ question
+    faqItems.forEach((item) => {
+      item.addEventListener('click', () => {
+        item.nextElementSibling.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+
 </html>
