@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Delete Account</title>
+</head>
+<body>
+  <h1>Delete Account</h1>
+
+  <form id="deleteForm">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <input type="submit" value="Delete Account">
+  </form>
+
+  <script>
+    document.getElementById("deleteForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent the form from submitting normally
+
+      // Get the values from the input fields
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+
+      // Perform your delete account logic here
+      // You can send an AJAX request to your server to delete the account
+
+      // For demonstration purposes, let's log the values to the console
+      console.log("Username: " + username);
+      console.log("Password: " + password);
+
+      // Reset the form fields
+      document.getElementById("deleteForm").reset();
+    });
+  </script>
+</body>
+</html>
